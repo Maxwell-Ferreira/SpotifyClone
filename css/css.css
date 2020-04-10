@@ -12,8 +12,8 @@ body{
 }
 
 .navbar{
-	display: fixed;
-	height: 85vh;
+	position: absolute;
+	height: 89vh;
 	width: 180px;
 	background-color: #1c1c1c;
 	padding: 10px;
@@ -40,19 +40,71 @@ body{
 }
 
 .nav-topic li{
-	padding: 10px;
+	padding: 8px;
 }
 
 .nav-topic i{
 	font-size: 1.5rem;
 }
 
+.nav-separator{
+	width: 90%;
+	border-top: 0.3px solid #adadad;
+}
+
+.main-top{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+
 .main{
 	padding: 10px;
+	margin-left: 200px;
+	margin-right: 260px;
+	height: 89vh;
+	width: calc(100vw - 400px);
+}
+
+.friends{
+	position: absolute;
+	height: 89vh;
+	width: 240px;
+	background-color: #1c1c1c;
+	padding: 10px;
+	color: #adadad;
+	overflow-y: scroll;
+	right: 0;
+}
+
+.friend{
+	display: flex;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.img-friend{
+	width: 40px;
+	height:40px;
+	border-radius: 10px;
+	margin: 14px;
+}
+
+.info-friend p, h4{
+	margin: 2px;
+}
+
+.find-friend{
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 30px;
+	text-align: center;
 }
 
 .footer{
-	height: 15vh;
+	height: 11vh;
 	border-top: solid 1px black;
 	background-color: #2e2e2e;
 }
@@ -66,8 +118,28 @@ body{
 	background-color: #8f8f8f;
 }
 
-/*
+::-webkit-scrollbar-button:single-button {
+	background-color: #1c1c1c;
+	display: block;
+	border-style: solid;
+	height: 13px;
+	width: 16px;
+}
 
-::-webkit-scrollbar-button{
-	background: url("https://img2.gratispng.com/20180416/dgw/kisspng-up-arrow-computer-icons-free-5ad4db8fddb807.9368101315238992799082.jpg");
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #777777 transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #555555 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+	border-color: #777777 transparent transparent transparent;
 }
