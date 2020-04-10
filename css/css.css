@@ -56,3 +56,18 @@ body{
 	border-top: solid 1px black;
 	background-color: #2e2e2e;
 }
+
+::-webkit-scrollbar{
+	width: 16px;
+	background-color: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #8f8f8f;
+}
+
+/*
+
+::-webkit-scrollbar-button{
+	background: url("https://img2.gratispng.com/20180416/dgw/kisspng-up-arrow-computer-icons-free-5ad4db8fddb807.9368101315238992799082.jpg");
+}
