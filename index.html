@@ -1,123 +1,295 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Tentativa de clone do spotify</title>
-	<meta charset="utf-8">
+	<title>Spotify Browse Clone</title>
 	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-	<div class="content">
-		<nav class="navbar">
-			<ul class="nav-content">
-				<li>
-					<ul class="nav-content nav-topic">
-						<li>
-							<i class="fas fa-home"></i>
-							<a href="#" class="nav-link"><strong>&nbspInício</strong></a>
-						</li>
-						<li>
-							<i class="fas fa-window-restore"></i>
-							<a href="#" class="nav-link"><strong>&nbspNavegar</strong></a>
-						</li>
-						<li>
-							<i class="fas fa-broadcast-tower"></i>
-							<a href="#" class="nav-link"><strong>&nbspRádio</strong></a>
-						</li>
-					</ul>
-				</li>
-				<hr class="nav-separator">
-				<li>
-					<ul class="nav-content nav-topic">
-						<li>SUA BIBLIOTECA</li>
-						<li><a href="#" class="nav-link"><strong>Feito para você</strong></a></li>
-						<li><a href="#" class="nav-link"><strong>Tocados recentemente</strong></a></li>
-						<li><a href="#" class="nav-link"><strong>Músicas Curtidas</strong></a></li>
-						<li><a href="#" class="nav-link"><strong>Álbuns</strong></a></li>
-						<li><a href="#" class="nav-link"><strong>Artistas</strong></a></li>
-						<li><a href="#" class="nav-link"><strong>Podcasts</strong></a></li>
-					</ul>
-				</li>
-				<hr class="nav-separator">
-				<li>
-					<ul class="nav-content nav-topic">
-						<li>PLAYLISTS</li>
-						<li><a href="#" class="nav-link"><strong>BRESQUEDELE</strong></a></li>
-						<li><a href="#" class="nav-link"><strong>só as top msm</strong></a></li>
-						<li><a href="#" class="nav-link"><strong>bilu teteia</strong></a></li>
-					</ul>
-				</li>
-				<li>
-					<ul class="nav-content nav-topic">
-						<li><a href="#" class="nav-link"><i class="fas fa-plus-circle"></i>&nbsp&nbspNova Playlist</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-
-		<div class="main">
-			<div class="main-top">
-				<form name="formSearch" id="idFormSearch" class="form-search">
-					<a href="#" class="nav-link"><i class="fas fa-arrow-left"></i></a>
-					<a href="#" class="nav-link"><i class="fas fa-arrow-right"></i></a>
-					<input type="text" name="search" class="search" placeholder="  buscar">
-				</form>
-				<div class="make-upgrade">
-					<p>FAZER UPGRADE</p>
+	<div class="page">
+		<div class="content">
+			<div class="navbar">
+				<div class="img-nav text-white">
+					<div class="img-nav-icon"><i class="fal fa-music"></i></div>
+					<div class="img-nav-text">MaxFy</div>
 				</div>
-				<div class="top-user">
-					<img src="img/icon.png" class="top-user-img">
-					<p>Nome do usuário</p><i class="fas fa-chevron-down"></i>
+				<div class="nav-menu">
+					<ul class="nav-menu-list">
+						<a href="#">
+							<li>
+								<div class="menu-list-icon"><i class="fas fa-home"></i></div>
+								<div class="menu-list-text"><strong>Início</strong></div>
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<div class="menu-list-icon"><i class="fas fa-search"></i></div>
+								<div class="menu-list-text"><strong>Início</strong></div>
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<div class="menu-list-icon"><i class="fas fa-book"></i></div>
+								<div class="menu-list-text"><strong>Biblioteca</strong></div>	
+							</li>
+						</a>
+					</ul>
+				</div>
+				<div class="nav-playlists">
+					<div class="playlists-text">PLAYLISTS</div>
+					<div class="playlists-topside">
+						<a href="#">
+							<div class="new-playlist">
+								<div class="playlists-topside-icon"><i class="fas fa-plus"></i></div>
+								<div class="playlists-topside-text"><strong>Nova Playlist</strong></div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="liked-songs">
+								<div class="playlists-topside-icon"><i class="fas fa-heart"></i></div>
+								<div class="playlists-topside-text"><strong>Músicas Curtidas</strong></div>
+							</div>
+						</a>
+						<div class="playlists-list">
+							<ul>
+								<li style="padding-top: 0;">
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+								<li>
+									<a href="#">Playlist 1</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="install-app">
+					<a href="">
+						<div class="install-app-content">
+							<div class="install-app-icon"><i class="far fa-arrow-alt-circle-down"></i></div>
+							<div class="install-app-text">Instalar o aplicativo</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="main">
+				<div class="menu-top">
+					<div class="menu-top-content">
+						<div class="navigation-buttons">
+							<i class="fas fa-arrow-circle-left"></i>
+							<i class="fas fa-arrow-circle-right"></i>
+						</div>
+						<div class="menu-top-rightside">
+							<div class="upgrade-button">
+								<button>FAÇA UPGRADE</button>
+							</div>
+							<div class="user-button">
+								<img src="img/user.jpg">
+								<div class="user-text">Maxwell Ferreira</div>
+								<i class="far fa-sort-down"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<section class="main-section">
+						<div class="section-top">
+							<h1 class="section-tittle"><a href="" class="text-white">Tocado recentemente</a></h1>
+							<div class="see-all"><a href="#">VER TUDO</a></div>
+						</div>
+						<div class="section-content">
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+					</section>
+					<section class="main-section">
+						<div class="section-top">
+							<h1 class="section-tittle"><a href="" class="text-white">Tocado recentemente</a></h1>
+							<div class="see-all"><a href="#">VER TUDO</a></div>
+						</div>
+						<div class="section-content">
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="section-item">
+								<img src="img/music.jpg" class="img-section-item">
+								<div class="item-bottom">
+									<div class="item-text">
+										<p class="text-white item-tittle" style="margin-bottom: 8px">Música</p>
+										<p class="item-artist">Artista</p>
+									</div>
+									<div class="item-play-box">
+										<i class="item-play fas fa-play"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+					</section>
+					<section class="main-section">
+
+					</section>
 				</div>
 			</div>
 		</div>
-
-		<div class="friends">
-			<h3><strong>Atividades de amigos</strong></h3>
-			<hr class="nav-separator">
-			<ul class="nav-content">
-				<li>
-					<div class="friend">
-						<img src="img/icon.png" class="img-friend">
-						<div class="info-friend">
-							<h4 style="color: white">Jubiscleiton da Silva</h4>
-							<p>Dodói</p>
-							<p>Rasta Chinela</p>
-							<p><i class="fas fa-music"></i>&nbspThe Bests</p>
-						</div>
+		<div class="footer">
+			<div class="footer-content">
+				<div class="footer-leftside">
+					<a href=""><img src="img/music.jpg"></a>
+					<div class="footer-leftside-text">
+						<a href="#" class="text-white">Musica</a>
+						<a href="#" class="footer-leftside-artist">Artista</a>
 					</div>
-				</li>
-				<li>
-					<div class="friend">
-						<img src="img/icon.png" class="img-friend">
-						<div class="info-friend">
-							<h4 style="color: white">Jubiscleiton da Silva</h4>
-							<p>Dodói</p>
-							<p>Rasta Chinela</p>
-							<p><i class="fas fa-music"></i>&nbspThe Bests</p>
-						</div>
+					<i class="far fa-heart"></i>
+					<i class="far fa-square"></i>
+				</div>
+				<div class="footer-center">
+					<div class="player-buttons">
+						<i class="far fa-random"></i>
+						<i class="far fa-step-backward"></i>
+						<i id="footer-play" class="far fa-play-circle"></i>
+						<i class="far fa-step-forward"></i>
+						<i class="fal fa-repeat"></i>
 					</div>
-				</li>
-				<li>
-					<div class="friend">
-						<img src="img/icon.png" class="img-friend">
-						<div class="info-friend">
-							<h4 style="color: white">Jubiscleiton da Silva</h4>
-							<p>Dodói</p>
-							<p>Rasta Chinela</p>
-							<p><i class="fas fa-music"></i>&nbspThe Bests</p>
-						</div>
+					<div class="player-bar">
+						<div class="current-time-music">1:45</div>
+						<hr>
+						<div class="total-time-music">3:12</div>
 					</div>
-				</li>
-				<li>
-					<a href="#" class="nav-link"><div class="find-friend">
-						<h3>Encontrar Amigos</h3>
-					</div></a>
-				</li>
-			</ul>
+				</div>
+				<div class="footer-rightside">
+					<i class="fas fa-list-ol"></i>
+					<i class="fas fa-desktop"></i>
+					<div class="footer-volume">
+						<i class="fas fa-volume-up"></i>
+						volume
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<footer class="footer">
-	</footer>
 </body>
 </html>
